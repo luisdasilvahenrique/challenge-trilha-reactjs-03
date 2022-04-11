@@ -77,7 +77,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         updateCart.splice(productIndex, 1);
         setCart(updateCart);
         localStorage.setItem('@RocketShoes:cart', JSON.stringify(updateCart))
-      }else{
+      } else {
         throw Error();
       }
     } catch {
